@@ -22,7 +22,7 @@
     }
 
     .jump-card {
-      max-width: 520px;
+      max-width: 560px;
       width: 100%;
       background-color: #ffffff;
       border-radius: 36px;
@@ -40,11 +40,11 @@
 
     .title-section {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       font-weight: 600;
       letter-spacing: -0.01em;
       background: linear-gradient(135deg, #1b6eb0 0%, #2a86da 80%);
@@ -58,10 +58,10 @@
 
     .subhead {
       color: #3f7fb2;
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 450;
       letter-spacing: 0.3px;
-      padding: 6px 14px;
+      padding: 5px 14px;
       background: rgba(210, 235, 255, 0.7);
       display: inline-block;
       border-radius: 40px;
@@ -73,15 +73,15 @@
     .jump-buttons {
       display: flex;
       flex-direction: column;
-      gap: 22px;
-      margin: 36px 0 22px;
+      gap: 16px;
+      margin: 30px 0 22px;
     }
 
     .jump-btn {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 24px;
+      padding: 16px 22px;
       background: rgba(255, 255, 255, 0.9);
       border: 1.8px solid rgba(70, 160, 250, 0.35);
       border-radius: 60px;
@@ -112,7 +112,7 @@
     }
 
     .service-label {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 650;
       color: #105a9e;
       line-height: 1.3;
@@ -120,7 +120,7 @@
     }
 
     .service-desc {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #367fbb;
       font-weight: 440;
       margin-top: 4px;
@@ -131,14 +131,14 @@
 
     .arrow-icon {
       background: #d9ebff;
-      width: 48px;
-      height: 48px;
+      width: 46px;
+      height: 46px;
       border-radius: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #0e6bc0;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 300;
       transition: all 0.1s;
       border: 1px solid #b3d6ff;
@@ -152,19 +152,15 @@
       box-shadow: inset 0 0 0 1px white, 0 6px 8px -3px #1e6ab3;
     }
 
-    .deepseek .service-label {
+    .github-btn .service-label {
       color: #0d4e7e;
     }
 
-    .n1n .service-label {
-      color: #0d5e8c;
-    }
-
     .footnote {
-      margin-top: 30px;
+      margin-top: 24px;
       text-align: center;
       color: #3677ae;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -174,7 +170,7 @@
 
     .footnote span {
       background: rgba(255, 255, 255, 0.75);
-      padding: 6px 16px;
+      padding: 5px 14px;
       border-radius: 40px;
       backdrop-filter: blur(4px);
       border: 0.5px solid #bedcff;
@@ -182,48 +178,11 @@
       font-weight: 450;
     }
 
-    .footnote i {
-      font-style: normal;
-      background: #d2e6ff;
-      width: 28px;
-      height: 28px;
-      border-radius: 28px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #0b5fa5;
-    }
-
-    @media (max-width: 480px) {
-      .jump-card {
-        padding: 28px 20px 32px;
-        border-radius: 32px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .service-label {
-        font-size: 1.3rem;
-      }
-
-      .arrow-icon {
-        width: 44px;
-        height: 44px;
-        font-size: 26px;
-      }
-
-      .jump-btn {
-        padding: 16px 20px;
-      }
-    }
-
     .bg-badge {
       display: flex;
       justify-content: center;
       gap: 10px;
-      margin: 20px 0 0;
+      margin: 16px 0 0;
     }
 
     .badge-dot {
@@ -237,6 +196,31 @@
     .divider {
       margin: 6px 0 0;
     }
+
+    @media (max-width: 480px) {
+      .jump-card {
+        padding: 28px 18px 32px;
+        border-radius: 32px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      .service-label {
+        font-size: 1.2rem;
+      }
+
+      .arrow-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 24px;
+      }
+
+      .jump-btn {
+        padding: 14px 18px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -247,7 +231,7 @@
     </div>
 
     <div class="jump-buttons">
-      <a href="/deepseek-chat/" class="jump-btn deepseek" target="_self" rel="noopener">
+      <a href="/deepseek-chat/" class="jump-btn" target="_self" rel="noopener">
         <div class="btn-text">
           <span class="service-label">DeepSeek · 对话</span>
           <span class="service-desc">
@@ -258,7 +242,7 @@
         <div class="arrow-icon" aria-hidden="true">→</div>
       </a>
 
-      <a href="/n1n-chat/" class="jump-btn n1n" target="_self" rel="noopener">
+      <a href="/n1n-chat/" class="jump-btn" target="_self" rel="noopener">
         <div class="btn-text">
           <span class="service-label">N1N · 对话</span>
           <span class="service-desc">
@@ -268,11 +252,32 @@
         </div>
         <div class="arrow-icon" aria-hidden="true">→</div>
       </a>
+
+      <a href="/openrouter-chat.html" class="jump-btn" target="_self" rel="noopener">
+        <div class="btn-text">
+          <span class="service-label">OpenRouter · 对话</span>
+          <span class="service-desc">
+            <span style="display: inline-block; width: 6px; height: 6px; background: #2e7ab3; border-radius: 10px; margin-right: 6px;"></span>
+            /openrouter-chat.html
+          </span>
+        </div>
+        <div class="arrow-icon" aria-hidden="true">→</div>
+      </a>
+
+      <a href="https://github.com/lym2394/chat/" class="jump-btn github-btn" target="_blank" rel="noopener noreferrer">
+        <div class="btn-text">
+          <span class="service-label">⭐ Star 支持下</span>
+          <span class="service-desc">
+            <span style="display: inline-block; width: 6px; height: 6px; background: #1f6eb0; border-radius: 10px; margin-right: 6px;"></span>
+            github.com/lym2394/chat
+          </span>
+        </div>
+        <div class="arrow-icon" aria-hidden="true">↗</div>
+      </a>
     </div>
 
     <div class="footnote">
-      <span>⚡ 快速访问 API 对话</span>
-      <i>⌵</i>
+      <span>⚡ 快速访问 · API 对话</span>
     </div>
 
     <div class="bg-badge">
@@ -282,9 +287,5 @@
     </div>
     <div class="divider"></div>
   </div>
-
-  <noscript>
-    <div style="color: #0a4c7e; text-align:center;">您的浏览器未启用JS，但不影响跳转功能。</div>
-  </noscript>
 </body>
 </html>
