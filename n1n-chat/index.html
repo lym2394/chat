@@ -1,0 +1,44 @@
+const MODELS = [
+    // ---------- 图像生成 ----------
+    { id: 'grok-3-image', name: 'Grok-3 Image', category: '图像生成', price: '$0.050/img' },
+    { id: 'doubao-seedream-4-0-250828', name: 'Doubao Seedream 4.0', category: '图像生成', price: '$0.2/img' },
+    { id: 'doubao-seedream-3-0-t2i-250415', name: 'Doubao Seedream 3.0', category: '图像生成', price: '$0.1/img' },
+    { id: 'flux-pro-1.1-ultra', name: 'Flux Pro 1.1 Ultra', category: '图像生成', price: '$0.5/img' },
+    { id: 'flux-dev', name: 'Flux Dev', category: '图像生成', price: '$0.08/img' },
+    { id: 'flux-schnell', name: 'Flux Schnell', category: '图像生成', price: '$0.05/img' },
+    { id: 'black-forest-labs/flux-schnell', name: 'Flux Schnell (BF)', category: '图像生成', price: '$0.022/img' },
+    { id: 'lucataco/flux-schnell-lora', name: 'Flux Schnell LoRA', category: '图像生成', price: '$0.047/img' },
+    { id: 'stability-ai/sdxl', name: 'SDXL', category: '图像生成', price: '$0.022/img' },
+    { id: 'ideogram-ai/ideogram-v2-turbo', name: 'Ideogram v2 Turbo', category: '图像生成', price: '$0.375/prompt' },
+    { id: 'sora_image', name: 'Sora Image', category: '图像生成', price: '$0.200/img' },
+
+    // ---------- 视频生成 ----------
+    { id: 'sora-2-all', name: 'Sora 2', category: '视频生成', price: '$0.1/s' },
+    { id: 'sora-2-characters', name: 'Sora 2 Characters', category: '视频生成', price: '$0.01/s' },
+    { id: 'viduq2-turbo', name: 'Vidu Q2 Turbo', category: '视频生成', price: '$0.210/s' },
+    { id: 'kling-custom-elements', name: 'Kling Custom Elements', category: '视频生成', price: '$0.01/s' },
+
+    // ---------- 音频生成 ----------
+    { id: 'kling-audio', name: 'Kling Audio', category: '音频生成', price: '$0.085/次' },
+    { id: 'suno_lyrics', name: 'Suno Lyrics', category: '音频生成', price: '$0.03/次' },
+
+    // ---------- 文本对话 ----------
+    { id: 'qwen3-coder-480b-a35b-instruct', name: 'Qwen3 Coder 480B', category: '文本对话', price: '$0.0150/1M tokens' },
+    { id: 'gpt-5.4-nano', name: 'GPT-5.4 Nano', category: '文本对话', price: '$0.12/1M tokens' },
+    { id: 'gpt-5-mini', name: 'GPT-5 Mini', category: '文本对话', price: '$0.15/1M tokens' },
+    { id: 'gpt-4o-mini', name: 'GPT-4o Mini', category: '文本对话', price: '$0.09/1M tokens' },
+    { id: 'gpt-4.1-nano', name: 'GPT-4.1 Nano', category: '文本对话', price: '$0.06/1M tokens' },
+    { id: 'gemini-2.5-flash-lite', name: 'Gemini 2.5 Flash-Lite', category: '文本对话', price: '$0.15/1M tokens' },
+
+    // ---------- 多模态 ----------
+    { id: 'qwen3-vl-flash', name: 'Qwen3-VL Flash', category: '多模态', price: '$0.15/1M tokens' },
+
+    // ---------- 图像编辑 ----------
+    { id: 'mj_custom_zoom', name: 'Midjourney Custom Zoom', category: '图像编辑', price: '$0.00/次' },
+    { id: 'mj_inpaint', name: 'Midjourney Inpaint', category: '图像编辑', price: '$0.00/次' },
+    { id: 'flux.1-kontext-pro', name: 'Flux Kontext Pro', category: '图像编辑', price: '$0.12/次' },
+    { id: 'lucataco/remove-bg', name: 'Remove Background', category: '图像编辑', price: '$0.002/img' },
+
+    // ---------- 文本处理 ----------
+    { id: 'netease-youdao/bce-reranker-base_v1', name: 'BCE Reranker', category: '文本处理', price: '$0.01/1M tokens' }
+];
